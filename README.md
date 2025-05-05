@@ -31,14 +31,14 @@ docker-compose up -d
 #### Backend
 
 ```bash
-cd backend
+cd movies-app-api
 yarn
 ```
 
 #### Frontend
 
 ```bash
-cd ../frontend
+cd ../movies-app-web
 yarn
 ```
 
@@ -49,7 +49,7 @@ yarn
 ### Backend
 
 ```bash
-cd backend
+cd movies-app-api
 yarn prisma migrate dev
 yarn start:dev
 ```
@@ -59,7 +59,7 @@ yarn start:dev
 Em outro terminal:
 
 ```bash
-cd frontend
+cd movies-app-web
 yarn dev
 ```
 
@@ -69,8 +69,8 @@ yarn dev
 
 ```
 movies-app/
-├── backend/       → API NestJS + Prisma + PostgreSQL (Docker)
-├── frontend/      → App Next.js com Chakra UI
+├── movies-app-api/       → API NestJS + Prisma + PostgreSQL (Docker)
+├── movies-app-web/      → App Next.js com Chakra UI
 └── README.md      → Este arquivo
 ```
 
@@ -83,4 +83,3 @@ movies-app/
 - Validações com DTOs
 - Estilização com Chakra UI
 - Integração com API
-
